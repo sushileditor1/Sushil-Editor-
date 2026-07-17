@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushil Editor | Nepali Lyrical Video & Music Promotion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#161F30',
+                            accent: '#F43F5E', // Rose/Red accent for fire/energy
+                            purple: '#8B5CF6'  // Aesthetic purple vibe
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-brand-dark/80 backdrop-blur-md border-b border-gray-800 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Name Only -->
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-purple">
+                    SUSHIL EDITOR
+                </span>
+            </div>
+            
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-brand-accent transition">Home</a>
+                <a href="#focus" class="hover:text-brand-accent transition">What We Do</a>
+                <a href="#features" class="hover:text-brand-accent transition">Features</a>
+                <a href="#mission" class="hover:text-brand-accent transition">Our Mission</a>
+                <a href="#contact" class="hover:text-brand-accent transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-gradient-to-r from-brand-accent to-brand-purple hover:opacity-90 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-brand-accent/25">
+                    Collaborate Now
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none p-2" aria-label="Toggle Menu">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 border-b border-gray-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block text-gray-300 hover:text-brand-accent py-2 border-b border-gray-800/40">Home</a>
+            <a href="#focus" class="block text-gray-300 hover:text-brand-accent py-2 border-b border-gray-800/40">What We Do</a>
+            <a href="#features" class="block text-gray-300 hover:text-brand-accent py-2 border-b border-gray-800/40">Features</a>
+            <a href="#mission" class="block text-gray-300 hover:text-brand-accent py-2 border-b border-gray-800/40">Our Mission</a>
+            <a href="#contact" class="block text-gray-300 hover:text-brand-accent py-2">Contact</a>
+            <a href="#contact" class="block text-center bg-gradient-to-r from-brand-accent to-brand-purple text-white py-2.5 rounded-xl font-semibold">
+                Collaborate Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden scroll-mt-20">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(139,92,246,0.15),transparent_50%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(244,63,94,0.1),transparent_50%)]"></div>
+        
+        <div class="max-w-5xl mx-auto text-center px-4 relative z-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-brand-accent/10 text-brand-accent border border-brand-accent/20 mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                Nepali Lyrical Video & Music Promotion
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Bringing Nepali Music to Life <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-pink-500 to-brand-purple">
+                    Through Visual Artistry
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Welcome to Sushil Editor. We are a professional promotional platform dedicated to delivering premium lyric videos and exposure for emerging and talented artists.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://youtube.com/@SushilEditor" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-red-600/30">
+                    <i class="fab fa-youtube text-lg"></i> Subscribe on YouTube
+                </a>
+                <a href="#contact" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white border border-gray-700 font-semibold px-8 py-4 rounded-xl transition">
+                    Get Your Music Promoted <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-800 my-0">
+
+    <!-- Channel Focus / Services -->
+    <section id="focus" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Channel Focus</h2>
+            <p class="text-gray-400">Our core specialties designed to elevate the presence of Nepali music worldwide.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Focus Card 1 -->
+            <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-accent/50 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-bullhorn text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Music Promotion</h3>
+                <p class="text-gray-400 leading-relaxed">We get your tracks heard. By giving exposure to talented artists, we connect you directly with a highly engaged audience.</p>
+            </div>
+            <!-- Focus Card 2 -->
+            <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-brand-purple/50 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-music text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Lyrical Videos</h3>
+                <p class="text-gray-400 leading-relaxed">Beautifully synced, aesthetically pleasing text animations that capture the raw emotion of your lyrics.</p>
+            </div>
+            <!-- Focus Card 3 -->
+            <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 hover:border-pink-500/50 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-film text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Creative Editing</h3>
+                <p class="text-gray-400 leading-relaxed">High-quality pacing, premium visual effects, color grading, and custom templates tailored perfectly to the beat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / What You'll Find -->
+    <section id="features" class="py-20 bg-black/40 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">On Our Channel</h2>
+                <p class="text-gray-400">Discover custom crafted musical content made for a premium audiovisual experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="flex gap-4 p-5 bg-brand-card/50 rounded-xl border border-gray-800/80">
+                    <div class="text-brand-accent text-lg shrink-0 mt-1"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Official Lyrical Videos</h4>
+                        <p class="text-sm text-gray-400">High fidelity, stunning typographical presentations for official releases.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex gap-4 p-5 bg-brand-card/50 rounded-xl border border-gray-800/80">
+                    <div class="text-brand-purple text-lg shrink-0 mt-1"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Trending & New Releases</h4>
+                        <p class="text-sm text-gray-400">Stay up to date with the latest hits dominating the Nepali music space.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex gap-4 p-5 bg-brand-card/50 rounded-xl border border-gray-800/80">
+                    <div class="text-pink-500 text-lg shrink-0 mt-1"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Nepali Music Content</h4>
+                        <p class="text-sm text-gray-400">A dedicated hub showcasing our rich local tunes, traditional fusions, and pop modern sounds.</p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="flex gap-4 p-5 bg-brand-card/50 rounded-xl border border-gray-800/80">
+                    <div class="text-brand-accent text-lg shrink-0 mt-1"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Aesthetic Visual Editing</h4>
+                        <p class="text-sm text-gray-400">Designed to be highly immersive with warm tones, modern vibes, and clean visuals.</p>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="flex gap-4 p-5 bg-brand-card/50 rounded-xl border border-gray-800/80">
+                    <div class="text-brand-purple text-lg shrink-0 mt-1"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Artist Branding</h4>
+                        <p class="text-sm text-gray-400">Transform your music identity with solid visuals that construct a professional presence.</p>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="flex gap-4 p-5 bg-brand-card/50 rounded-xl border border-gray-800/80">
+                    <div class="text-pink-500 text-lg shrink-0 mt-1"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Emotional & Vibe Tracks</h4>
+                        <p class="text-sm text-gray-400">Curated and crafted video concepts for chill, sad, vibe, and deep feeling tunes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section id="mission" class="py-24 relative overflow-hidden scroll-mt-20">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.08),transparent_70%)]"></div>
+        <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+            <span class="text-brand-accent text-3xl mb-4 inline-block"><i class="fas fa-heart"></i></span>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Our Mission</h2>
+            <blockquote class="text-xl md:text-2xl text-gray-300 italic leading-relaxed font-light">
+                "We believe every talented artist deserves recognition. Through creative editing and professional presentation, we aim to help underrated musicians reach more listeners and grow their audience."
+            </blockquote>
+            <div class="mt-6 text-sm text-gray-500 tracking-wider uppercase">— SUSHIL EDITOR</div>
+        </div>
+    </section>
+
+    <!-- Contact & Collaboration -->
+    <section id="contact" class="py-20 bg-brand-card/40 border-t border-gray-800 scroll-mt-20">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto">
+                Are you an upcoming singer, songwriter, or producer looking to release your next track? Get in touch via email or follow us on our social platforms.
+            </p>
+            
+            <!-- Contact Grid (UPDATED) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <!-- Email Hub -->
+                <div class="flex flex-col items-center justify-between bg-brand-card p-5 rounded-2xl border border-gray-800">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-brand-accent text-xl"><i class="fas fa-envelope"></i></span>
+                        <span class="font-semibold text-gray-200 text-sm select-all">sushileditor100@gmail.com</span>
+                    </div>
+                    <a href="mailto:sushileditor100@gmail.com" class="w-full bg-brand-accent hover:bg-brand-accent/90 text-white font-semibold py-2.5 rounded-xl transition text-sm">
+                        Send Mail
+                    </a>
+                </div>
+
+                <!-- Facebook Hub (ADDED) -->
+                <div class="flex flex-col items-center justify-between bg-brand-card p-5 rounded-2xl border border-gray-800">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-blue-500 text-xl"><i class="fab fa-facebook"></i></span>
+                        <span class="font-semibold text-gray-200 text-sm">Facebook Page</span>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61577424834428" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-xl transition text-sm">
+                        Visit Page
+                    </a>
+                </div>
+
+                <!-- TikTok Hub (ADDED) -->
+                <div class="flex flex-col items-center justify-between bg-brand-card p-5 rounded-2xl border border-gray-800">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-cyan-400 text-xl"><i class="fab fa-tiktok"></i></span>
+                        <span class="font-semibold text-gray-200 text-sm">TikTok Profile</span>
+                    </div>
+                    <a href="https://vm.tiktok.com/ZS9dNLEfvnRnt-zmB51/" target="_blank" rel="noopener noreferrer" class="w-full bg-gray-700 hover:bg-gray-600 border border-gray-600 text-white font-semibold py-2.5 rounded-xl transition text-sm">
+                        Follow on TikTok
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-purple">
+                    SUSHIL EDITOR
+                </span>
+                <p class="text-xs text-gray-500 mt-0.5">Empowering the sound of Nepal, one lyric video at a time.</p>
+            </div>
+            
+            <!-- Expanded Social Links in Footer -->
+            <div class="flex items-center space-x-6">
+                <a href="https://youtube.com/@SushilEditor" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-500 text-xl transition" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577424834428" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 text-xl transition" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://vm.tiktok.com/ZS9dNLEfvnRnt-zmB51/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white text-xl transition" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="mailto:sushileditor100@gmail.com" class="text-gray-400 hover:text-brand-accent text-xl transition" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <p class="text-xs text-gray-600">&copy; 2026 Sushil Editor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Toggle Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
